@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 พระเครื่องแดนสยาม - แกลเลอรีผู้ใช้</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self';
+                   script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+                   img-src 'self' data: https:;
+                   font-src 'self' https://fonts.gstatic.com;
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self'">
+    
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Security Status -->
+    <div class="security-status" id="securityStatus">
+        <i class="fas fa-shield-alt"></i>
+        <span>ระบบปลอดภัย</span>
+    </div>
+
+    <!-- GitHub Link -->
+    <a href="https://github.com/your-username/bpt-amulets-gallery" class="github-link" target="_blank">
+        <i class="fab fa-github"></i> View on GitHub
+    </a>
+
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <button class="audio-btn" id="volumeBtn" onclick="app.toggleVolume()">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <button class="audio-btn" onclick="app.playWelcomeMessage()" title="เล่นเสียงต้อนรับอีกครั้ง">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+
+    <header>
+        พระเครื่องแดนสยาม
+        <button class="welcome-message" onclick="app.playWelcomeMessage()" title="เล่นเสียงต้อนรับ">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </header>
+
+    <div id="app">
+        <!-- Tab Controls -->
+        <div id="top-controls">
+            <button id="tabGallery" class="tab-btn active">Gallery รูป</button>
+            <button id="tabAlbums" class="tab-btn">อัลบั้ม</button>
+            <button id="tabHistory" class="tab-btn">ประวัติ</button>
+            <button id="tabSecurity" class="tab-btn">ความปลอดภัย</button>
+            <select id="categorySelect"></select>
+            <input type="text" id="searchBox" placeholder="🔍 ค้นหา...">
+            <button class="add-album-btn" onclick="app.showCreateAlbumModal()">
+                <i class="fas fa-plus"></i> สร้างอัลบั้ม
+            </button>
+            <button class="add-photo-btn" onclick="app.showAddGalleryPhotoModal()">
+                <i class="fas fa-plus"></i> เพิ่มรูป
+            </button>
+        </div>
+
+        <div id="gallery"></div>
+
+        <!-- Modals จะถูกเพิ่มที่นี่โดย JavaScript -->
+        <div id="modals-container"></div>
+    </div>
+
+    <footer>
+        <p>BPT AI โค้ดและไอเดียอุ๋ยบางแค | แกลเลอรีพระเครื่องแดนสยาม</p>
+    </footer>
+
+    <!-- Load JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/security.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- Initialize App -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            app.initialize();
+        });
+    </script>
+</body>
+</html>
