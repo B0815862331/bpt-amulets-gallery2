@@ -1,0 +1,52 @@
+/* นำ CSS ทั้งหมดจากโค้ดเดิมมาใส่ที่นี่ */
+/* โค้ด CSS ยาวประมาณ 500 บรรทัด */
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    font-family: 'Kanit', sans-serif; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.pexels.com/photos/19067354/pexels-photo-19067354.jpeg') no-repeat center center fixed;
+    background-size: cover; 
+    color: #fff; 
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* Security Status */
+.security-status {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 204, 136, 0.9);
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* ... CSS อื่นๆ ทั้งหมด ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* ... responsive styles ... */
+}
+
+@media (max-width: 480px) {
+    /* ... mobile styles ... */
+}
