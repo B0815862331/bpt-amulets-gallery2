@@ -51,58 +51,5 @@ const utils = {
         link.click();
         document.body.removeChild(link);
         URL.revokeObjectURL(url);
-    },
-
-    // อ่านไฟล์ JSON
-    readJSONFile: function(file) {
-        return new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const data = JSON.parse(e.target.result);
-                    resolve(data);
-                } catch (error) {
-                    reject(new Error('ไฟล์ JSON ไม่ถูกต้อง'));
-                }
-            };
-            reader.onerror = function() {
-                reject(new Error('ไม่สามารถอ่านไฟล์ได้'));
-            };
-            reader.readAsText(file);
-        });
-    },
-
-    // จำกัดข้อความ
-    truncateText: function(text, maxLength = 50) {
-        if (text.length <= maxLength) return text;
-        return text.substr(0, maxLength) + '...';
-    },
-
-    // สร้าง element HTML
-    createElement: function(tag, className, innerHTML = '') {
-        const element = document.createElement(tag);
-        if (className) element.className = className;
-        if (innerHTML) element.innerHTML = innerHTML;
-        return element;
-    },
-
-    // แสดง loading
-    showLoading: function(message = 'กำลังโหลด...') {
-        const loading = this.createElement('div', 'loading-overlay');
-        loading.innerHTML = `
-            <div class="loading-spinner">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>${message}</p>
-            </div>
-        `;
-        document.body.appendChild(loading);
-        return loading;
-    },
-
-    // ซ่อน loading
-    hideLoading: function(loadingElement) {
-        if (loadingElement && loadingElement.parentNode) {
-            loadingElement.parentNode.removeChild(loadingElement);
-        }
     }
 };
