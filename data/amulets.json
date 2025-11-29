@@ -1,0 +1,65 @@
+{
+  "categories": {
+    "พระยอดนิยม": [
+      {
+        "id": "1",
+        "name": "พระบางลำพูน",
+        "imageUrl": "https://images.unsplash.com/photo-1586947201838-5d66c1b94a5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVkZGhhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "description": "พระบางลำพูน สร้างสมัยล้านนา",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "createdBy": "ผู้ใช้"
+      },
+      {
+        "id": "2", 
+        "name": "พระสมเด็จวัดระฆัง",
+        "imageUrl": "https://images.unsplash.com/photo-1547994777-8d47e752ad49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1ZGRoYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "description": "พระสมเด็จฯ เนื้อชินเงิน",
+        "createdAt": "2024-01-16T14:20:00Z",
+        "createdBy": "ผู้ใช้"
+      }
+    ],
+    "พระกรุ": [
+      {
+        "id": "3",
+        "name": "พระกรุวัดราชบพิธ",
+        "imageUrl": "https://images.unsplash.com/photo-1547996166-1c48cb0b63b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1ZGRoYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "description": "พระกรุเก่าวัดราชบพิธ",
+        "createdAt": "2024-01-17T09:15:00Z",
+        "createdBy": "ผู้ใช้"
+      }
+    ]
+  },
+  "albums": {
+    "พระเครื่องกรุงเทพมหานคร": {
+      "id": "album1",
+      "name": "พระเครื่องกรุงเทพมหานคร",
+      "description": "รวมพระเครื่องจากวัดต่างๆ ในกรุงเทพมหานคร",
+      "coverImage": "https://lh3.googleusercontent.com/pw/AP1GczOhpFt1t21LBTAlag3zeNUelWuqyHLD2yDke8FpfYqfUWEG-p49PMVBz7zxEck7cC2X4kWam0bKAyykdcKQd-cMFisHRa6j3Ll62o0bwknBMjjRU_KltsYw3edEvxX8L8VfkZNJlmnTtWEVjPDqzdZ2=w952-h955-s-no?authuser=0",
+      "photos": [
+        "1", "2"
+      ],
+      "createdAt": "2024-01-16T14:15:00Z",
+      "createdBy": "ผู้ใช้"
+    }
+  },
+  "history": [
+    {
+      "id": "hist1",
+      "type": "สร้างหมวดหมู่",
+      "details": "สร้างหมวดหมู่ 'พระยอดนิยม'",
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "hist2", 
+      "type": "เพิ่มรูปภาพ",
+      "details": "เพิ่มรูปภาพ 'พระบางลำพูน' ในหมวดหมู่ 'พระยอดนิยม'",
+      "timestamp": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-01-20T10:00:00Z",
+    "totalPhotos": 3,
+    "totalAlbums": 1,
+    "version": "1.0.0"
+  }
+}
